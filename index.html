@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Icon kit's code -->
-  <script src="https://kit.fontawesome.com/5a559acafe.js" crossorigin="anonymous"></script>
-  <!-- DaisyUI & TailWind CDN -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Google Font CDN -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon kit's code -->
+    <script
+      src="https://kit.fontawesome.com/5a559acafe.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- DaisyUI & TailWind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font CDN -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
-.lexend {
-  font-family: "Lexend", sans-serif;
-  font-style: normal;
-}
-</style>
-<title>Assignment 05</title>
-</head>
-<body data-theme="light" class="lexend">
-<script src="main.js"></script>
-</body>
+      .lexend {
+        font-family: "Lexend", sans-serif;
+        font-style: normal;
+      }
+    </style>
+    <title>Assignment 05</title>
+  </head>
+  <body data-theme="light" class="lexend">
+    <!-- Navbar Start -->
+    <nav class=" md:px-20 lg:px-32 bg-zinc-100">
+      <div class="navbar bg-zinc-100">
+        <div class="navbar-start">
+          <a href="/blog.html" class="btn text-xl font-semibold text-neutral-900 bg-lime-300 px-6 py-3 text-center">Blog</a>
+        </div>
+        <div class="navbar-center">
+          <img class="hidden md:w-12 md:h-12 md:flex md:mr-4" src="/assets/logo.png" alt="logo" />
+          <h4 class="font-semibold text-xl text-center">Donate <br class="md:hidden"> Bangladesh</h4>
+        </div>
+        <div class="navbar-end">
+          <img class="w-7 h-7 mr-2" src="/assets/coin.png" alt="coin" />
+          <div class="text-xl font-medium text-neutral-900 opacity-70 mr-1">
+            5000
+          </div>
+          <div class="text-xl font-medium text-neutral-900 opacity-70">BDT</div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <script src="main.js"></script>
+  </body>
 </html>
