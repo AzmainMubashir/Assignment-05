@@ -37,9 +37,34 @@ document.getElementById('donate-noakhali')
             return;
             
         }
-        
 
-})
+});
+
+document.getElementById('donate-feni')
+    .addEventListener('click', function(event){
+
+        event.preventDefault();
+        const currentBalance = getTextValue('current-balance');
+        const donateMoneyFeni = getInputValue('feni-input');
+        const donatedMoneyFeni = getTextValue('donated-money-feni');
+        
+        if (donateMoneyFeni > 0 && currentBalance >= donateMoneyFeni) {
+              
+            const newBalance = currentBalance - donateMoneyFeni;
+            const totalDonationFeni = donateMoneyFeni + donatedMoneyFeni;
+            document.getElementById('current-balance').innerText = newBalance;
+            document.getElementById('donated-money-feni').innerText = totalDonationFeni;
+            my_modal_1.showModal();
+            document.getElementById('feni-input').value = "";
+            
+        } else {
+
+            alert('Invalid Donate Amount.');
+            return;
+            
+        }
+
+});
 
 
 
