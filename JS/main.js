@@ -66,5 +66,31 @@ document.getElementById('donate-feni')
 
 });
 
+document.getElementById('donate-students')
+    .addEventListener('click', function(event){
+
+        event.preventDefault();
+        const currentBalance = getTextValue('current-balance');
+        const donateMoneyStudents = getInputValue('students-input');
+        const donatedMoneyStudents = getTextValue('donated-money-students');
+        
+        if (donateMoneyStudents > 0 && currentBalance >= donateMoneyStudents) {
+              
+            const newBalance = currentBalance - donateMoneyStudents;
+            const totalDonationStudents = donateMoneyStudents + donatedMoneyStudents;
+            document.getElementById('current-balance').innerText = newBalance;
+            document.getElementById('donated-money-students').innerText = totalDonationStudents;
+            my_modal_1.showModal();
+            document.getElementById('students-input').value = "";
+            
+        } else {
+
+            alert('Invalid Donate Amount.');
+            return;
+            
+        }
+
+});
+
 
 
